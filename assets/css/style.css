@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+main{
+    width: 400px;
+    margin: 10% auto;
+}
+#conteudo{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    margin: 15px auto;
+}
+#grup-add-task{
+    display: flex;
+    justify-content: center;
+}
+#grup-add-task input[type = text], #grup-add-task button{
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 8px 4px;
+}
+#grup-add-task input[type = text]{
+    margin-left: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.74);
+    outline: none;
+}
+#grup-add-task button{
+    color: rgb(0, 172, 252);
+    border: 1px solid  rgb(0, 172, 252);
+    background: rgba(0, 172, 252, 0.096);
+    cursor: pointer;
+}
+#grup-add-task button:active{
+    color: rgb(255, 255, 255);
+    border: 1px solid  rgb(255, 255, 255);
+    background: rgba(0,172,252);
+}
+.task{
+    display: flex;
+    margin: 15px 0;
+    font-size: 18px;
+}
+.task label{
+    margin-left: 4px;
+}
+:checked + label {
+    text-decoration: line-through;
+    color: grey;
+  }
